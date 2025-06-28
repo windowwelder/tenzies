@@ -8,7 +8,7 @@ body {
     height: 379px;
     top: 69px;
     left: 76px;
-    background-color: #0B2434;
+    background-color: #0A2434;
 }
 
 main {
@@ -18,4 +18,25 @@ main {
     left: 20px;
     border-radius: 10px;
     background-color: #F5F5F5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: 2;
+    gap: 1rem;
+    width: 250.87998962402344px;
+    height: 252.79998779296875px;
+    top: 33.28px;
+    left: 34.56px;
+}
+
+.die {
+    width: 35.84000015258789px;
+    height: 35.84000015258789px;
+    top: 134.4px;
+    left: 142.08px;
 }
