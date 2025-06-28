@@ -1,6 +1,9 @@
 import Die from "./Die"
 
 export default function App() {
+        const generateAllDice = () => {
+        return [...Array(10)].map( () => Math.ceil(Math.random()*6) )
+        }
     return (
         <main>
             <div className="container">
