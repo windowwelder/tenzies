@@ -18,7 +18,7 @@ export default function App() {
             <div className="container">
                 {diceElements}
             </div>
-            <button onClick={updateAllDice}>Roll</button>
+            <button className="roll-dice" onClick={updateAllDice}>Roll</button>
         </main>
     )
 }
