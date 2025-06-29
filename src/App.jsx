@@ -1,22 +1,19 @@
 import Die from "./Die"
+import { useState } from "react"
 
 export default function App() {
+        const [dice, setDice] = useState(generateAllDice())
+        
         const generateAllDice = () => {
         return [...Array(10)].map( () => Math.ceil(Math.random()*6) )
         }
+        
+        const diceElements = dice.map( num  => <Die value={num} />)
+
     return (
         <main>
             <div className="container">
-                <Die value={1} className="die"/>
-                <Die value={2} className="die"/>
-                <Die value={3} className="die"/>
-                <Die value={4} className="die"/>
-                <Die value={5} className="die"/>
-                <Die value={6} className="die"/>
-                <Die value={1} className="die"/>
-                <Die value={2} className="die"/>
-                <Die value={3} className="die"/>
-                <Die value={4} className="die"/>
+                {diceElements}
             </div>
         </main>
     )
