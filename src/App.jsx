@@ -24,8 +24,10 @@ export default function App() {
         const diceElements = dice.map(dice => <Die hold={ () => hold(dice.id)} isHeld={dice.isHeld} key={dice.id} value={dice.value} id={dice.id}/>)
 
         const updateAllDice = () => {
-        setDice(generateAllDice())
-        }
+        setDice( oldDice => oldDice.map(die => 
+            die.isHeld ? die : {...die, value: Math.ceil(Math.random() * 6)}
+        ))
+    }
 
     return (
         <main>
