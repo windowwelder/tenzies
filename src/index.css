@@ -24,7 +24,7 @@ div#root {
 main {
     background-color: #F5F5F5;
     height: 100%;
-    border-radius: 5px;
+    border-radius: 7px;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -34,27 +34,30 @@ main {
 button {
     font-family: Karla, sans-serif;
     cursor: pointer;
+    box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.15);
+}
+
+.instructions {
+    margin: 0.5rem 1rem 1rem 1rem;
+    text-align: center;
 }
 
 .dice-container {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     grid-template-rows: 2;
-    gap: 20px;
+    align-self: center;
+    gap: 10px;
 }
 
 .dice-container button {
-    height: 50px;
-    width: 50px;
-    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.15);
+    height: 65px;
+    width: 65px;
     border-radius: 10px;
     border: none;
     background-color: white;
-    font-family: Karla, sans-serif;
-    font-size: 1.75rem;
+    font-size: 2rem;
     font-weight: bold;
-    cursor: pointer;
-    margin-bottom: 40px
 }
 
 .title {
@@ -64,10 +67,11 @@ button {
 
 button.roll-dice {
     height: 50px;
-    width: 100px;
+    width: 150px;
     border: none;
     border-radius: 6px;
     background-color: #5035FF;
     color: white;
     font-size: 1.2rem;
+    font-weight: 500;
 }

@@ -1,22 +1,23 @@
-# Tenzies Game 
+# Tenzies Game
 
-A simple dice game built with React, inspired by the Scrimba capstone project.  
-Players roll dice until all show the same value, with the option to hold dice between rolls.  
-**Live demo:** [https://tenzies-peach-ten.vercel.app/] | **Code:** this repo
+This project is part of my learning journey through the [Scrimba Frontend Developer Career Path](https://scrimba.com/).
 
----
+## 🔒 Code Hidden
 
-## Features
-- 🎲 Roll 10 dice until all match
-- 📌 Hold dice between rolls
-- ⏱️ Track number of rolls & time
-- 🏆 Win detection with celebration animation
-- 📱 Responsive design (mobile & desktop)
+To comply with course guidelines and avoid sharing copyrighted content, the source code of this project is not publicly available.
 
----
+However, the **full Git commit history** has been retained to demonstrate my learning progress and implementation steps.
 
-## Tech Stack
-- **React** (functional components & hooks)
-- **Vite** (development & build)
-- **CSS** (flexbox/grid for layout)
-- **React Confetti** (win animation)
+## 🎮 Project Overview
+
+Tenzies is a simple dice game where the player rolls until all dice show the same value. Key features implemented:
+
+- React state management with `useState`
+- Conditional rendering and win logic
+- Responsive and interactive UI
+- Confetti animation on win
+- Component design and reuse
+
+## 💬 Want to See the Code?
+
+If you're reviewing my portfolio for hiring or collaboration, I'm happy to share the code privately. Just reach out.
