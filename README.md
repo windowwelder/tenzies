@@ -1,4 +1,4 @@
-# Tenzies Game (React)
+# Tenzies Game 
 
 A simple dice game built with React, inspired by the Scrimba capstone project.  
 Players roll dice until all show the same value, with the option to hold dice between rolls.  
