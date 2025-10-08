@@ -1,6 +1,10 @@
 export default function Die(props) {
-    const style = {
-        backgroundColor: props.isHeld ? "#59E391" : "white"
-    }
-    return (<button onClick={ () => props.hold()} style={style}>{props.value}</button>)
+    //
+    // 1)add the image with condition:
+    //  if value is 1 then image is die-1 (with template literals)
+    // 2) add condition with props.isHeld
+
+    return (<button onClick={ () => props.hold()}>
+                <img src={`./src/assets/die${props.isHeld ? "-held": ""}-${props.value}.svg`}/>
+            </button>)
 }
