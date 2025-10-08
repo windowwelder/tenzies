@@ -5,6 +5,6 @@ export default function Die(props) {
     // 2) add condition with props.isHeld
 
     return (<button onClick={ () => props.hold()}>
-                <img src={`./src/assets/die${props.isHeld ? "-held": ""}-${props.value}.svg`}/>
+                <img src={`../assets/die${props.isHeld ? "-held": ""}-${props.value}.svg`}/>
             </button>)
 }
