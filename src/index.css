@@ -58,6 +58,10 @@ button {
     background-color: white;
     font-size: 2rem;
     font-weight: bold;
+    display: inline-grid;
+    background-position:center;
+    background-repeat:no-repeat;
+    background-size:contain;
 }
 
 .title {
