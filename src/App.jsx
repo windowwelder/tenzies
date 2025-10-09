@@ -1,5 +1,5 @@
 import Die from "./Die"
-import { useState } from "react"
+import { useState, useEffect } from "react"
 import { nanoid } from "nanoid"
 import Confetti from "react-confetti"
 
@@ -20,6 +20,16 @@ export default function App() {
 
         const isGameWon = dice.every( die => die.isHeld )
         
+        useEffect( () => {
+            const values = [1,2,3,4,5,6]
+            values.forEach( value =>
+                {
+                    new Image().src = `/dice/die-${value}.svg`
+                    new Image().src = `/dice/die-${value}.svg`
+                }
+            )
+        }, [] )
+
         const hold = (id) => {
             setDice(prev => {
                 const d = prev.find(d => d.id === id)
