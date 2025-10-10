@@ -25,7 +25,7 @@ export default function App() {
             values.forEach( value =>
                 {
                     new Image().src = `/dice/die-${value}.svg`
-                    new Image().src = `/dice/die-${value}.svg`
+                    new Image().src = `/dice/die-held-${value}.svg`
                 }
             )
         }, [] )
